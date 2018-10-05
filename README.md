@@ -5,8 +5,8 @@ OpenSupports project.
 
 # Usage
 
-In OpenSupports, there is a folder with files for every language we 
-support. Since it is tiring to add new translations to all the files 
+In OpenSupports, there is [a folder with files for every language](https://github.com/opensupports/opensupports/tree/master/client/src/data/languages) 
+we support. Since it is tiring to add new translations to all the files 
 whenever someone wants to add a new phrase for translation, this script
 automates it.
 
@@ -19,3 +19,10 @@ phrase and complete all the languages translations.
 Here there is a picture of how it works:
 
 ![demo](https://github.com/mredigonda/opensupports-translater/blob/master/demo.png)
+
+# How to use it
+
+Simply copy main.py to the data/languages folder and run it, you will need to
+update your version of googletrans according to [this commit](https://github.com/ssut/py-googletrans/pull/78/files).
+
+
