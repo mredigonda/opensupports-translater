@@ -1,8 +1,10 @@
 from googletrans import Translator
+import colorama
 import ast
 
 class Translater:
     def __init__(self):
+        colorama.init(autoreset=True)
         self.data = self.get_language_data('en')
     
     def get_language_description(self, data):
@@ -48,7 +50,7 @@ class Translater:
         f.close()
         
         new_line = "    '{0}': '{1}',\n".format(key, value)
-        #~ print(new_line)
+        print(colorama.Fore.GREEN + str(line) + ': ' + new_line)
         contents.insert(line - 1, new_line)
         
         f = open(lang + '.js', 'w')
@@ -72,7 +74,6 @@ class Translater:
                     value = translator.translate(self.data[key]['value'], 
                         src='en', dest=dest_language).text
                     self.add_property(language, key, value, self.data[key]['lineno'])
-                    print("'"+key+"': '"+value+"',")
 
 if __name__ == "__main__":
     translater = Translater()
