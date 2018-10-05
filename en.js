@@ -193,6 +193,7 @@ export default {
     'CHART_COMMENT': 'Replies',
     'CHART_ASSIGN': 'Assigned',
 
+    //ACTIVITIES
     'ACTIVITY_COMMENT': 'commented ticket',
     'ACTIVITY_ASSIGN': 'assigned ticket',
     'ACTIVITY_UN_ASSIGN': 'unassigned ticket',
@@ -253,6 +254,7 @@ export default {
     'STEP_6_DESCRIPTION': 'Please configure the administrator account.',
     'STEP_7_DESCRIPTION': 'Installation is completed.',
 
+    //VIEW DESCRIPTIONS
     'CREATE_TICKET_DESCRIPTION': 'This is a form for creating tickets. Fill the form and send us your issues/doubts/suggestions. Our support system will answer it as soon as possible.',
     'TICKET_LIST_DESCRIPTION': 'Here you can find a list of all tickets you have sent to our support team.',
     'TICKETS_DESCRIPTION': 'Send ticket through our support center and get response of your doubts, suggestions and issues.',
@@ -299,6 +301,7 @@ export default {
     'ENABLE_USER_DESCRIPTION': 'This action allows the user to sign in and create tickets.',
     'DISABLE_USER_DESCRIPTION': 'User will be disabled and will not be able to sign in and create tickets.',
 
+    //ERRORS
     'EMAIL_OR_PASSWORD': 'Email or password invalid',
     'EMAIL_NOT_EXIST': 'Email does not exist',
     'ERROR_EMPTY': 'Invalid value',
@@ -328,6 +331,7 @@ export default {
     'ERROR_IMAGE_SIZE': 'No image can have a size greater than {size} MB',
     'USER_DISABLED': 'This account is disabled.',
 
+    //MESSAGES
     'SIGNUP_SUCCESS': 'You have registered successfully in our support system.',
     'TICKET_SENT': 'Ticket has been created successfully.',
     'VALID_RECOVER': 'Password recovered successfully',

@@ -193,6 +193,7 @@ export default {
     'CHART_COMMENT': '回复',
     'CHART_ASSIGN': '分配',
 
+    //ACTIVITIES
     'ACTIVITY_COMMENT': '評論票',
     'ACTIVITY_ASSIGN': '分配票',
     'ACTIVITY_UN_ASSIGN': '未分配的票',
@@ -252,6 +253,7 @@ export default {
     'STEP_6_DESCRIPTION': '請配置管理員帳號。',
     'STEP_7_DESCRIPTION': '安裝完成',
 
+    //VIEW DESCRIPTIONS
     'CREATE_TICKET_DESCRIPTION': '這是一個用於創建票證的表單。填寫表格並將您的問題/疑問/建議發送給我們。我們的支持系統將盡快回答。',
     'TICKET_LIST_DESCRIPTION': '在這裡，您可以找到您已發送給我們的支持團隊的所有門票的列表。',
     'TICKETS_DESCRIPTION': '通過我們的支持中心發送票證，並獲得您的疑問，建議和問題的反應。',
@@ -298,6 +300,7 @@ export default {
     'ENABLE_USER_DESCRIPTION': '此操作允许用户登录并创建票证。',
     'DISABLE_USER_DESCRIPTION': '用户将被禁用，无法登录并创建票证。',
 
+    //ERRORS
     'EMAIL_OR_PASSWORD': '電子郵件或密碼無效',
     'EMAIL_NOT_EXIST': '電子郵件不存在',
     'ERROR_EMPTY': '無效值',
@@ -327,6 +330,7 @@ export default {
     'ERROR_IMAGE_SIZE': '没有图像的大小可以超过{size}MB',
     'USER_DISABLED': '此帐户已被停用。',
 
+    //MESSAGES
     'SIGNUP_SUCCESS': '您已在我們的支持系統中成功註冊',
     'TICKET_SENT': '故障單已成功創建。',
     'VALID_RECOVER': '密碼已成功恢復',
