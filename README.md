@@ -18,4 +18,4 @@ phrase and complete all the languages translations.
 
 Here there is a picture of how it works:
 
-[[https://github.com/mredigonda/repository/blob/master/demo.png|alt=demo]]
+[[https://github.com/mredigonda/opensupports-translater/blob/master/demo.png|alt=demo]]
