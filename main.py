@@ -29,10 +29,9 @@ class Translater:
             lineno = 0
             for l in f:
                 lineno += 1
-                if l[0] == 'e':
-                    continue # export default line
-                if l[0] == '}':
-                    continue # last line
+                last_char = l[-2:-1]
+                if last_char != ',' and last_char != "'":
+                    continue
                 line_data = ast.literal_eval('{'+l+'}')
                 if line_data.keys():
                     key = list(line_data.keys())[0]
@@ -50,7 +49,7 @@ class Translater:
         f.close()
         
         new_line = "    '{0}': '{1}',\n".format(key, value)
-        print(colorama.Fore.GREEN + str(line) + ': ' + new_line)
+        print(colorama.Fore.GREEN + str(line) + ': ' + new_line[:-1])
         contents.insert(line - 1, new_line)
         
         f = open(lang + '.js', 'w')
@@ -60,9 +59,8 @@ class Translater:
 
     def main(self):
         translator = Translator()
-        #~ language_list = ['br', 'cn', 'de', 'es', 'fr', 'gr', 'in', 'it', 
-            #~ 'jp', 'nl', 'pt', 'ru', 'tr']
-        language_list = ['br']
+        language_list = ['br', 'cn', 'de', 'es', 'fr', 'gr', 'in', 'it', 
+            'jp', 'nl', 'pt', 'ru', 'tr']
             
         for language in language_list:
             print('Translating for language: ' + language)
